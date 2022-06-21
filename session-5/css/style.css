@@ -1,0 +1,48 @@
+body{
+    background-color: #D3F3EE;
+    font-family: monospace;
+    font-size: larger;
+}
+
+h1{
+    color: #BC2C1A;
+}
+
+ul{
+    padding: 0;
+}
+
+li{
+    list-style: none;
+    background: #DACC3E;
+    padding: 14px;
+    border: darkblue;
+    border-width:medium;
+    border-style:ridge;
+    border-inline-start-width:1em;
+    border-image-repeat: repeat;
+    border-radius: 18px;
+}
+
+a{
+    color: darkblue;
+    text-decoration: none;
+}
+
+#monkey{
+    margin: 20px;
+    width: 100px;
+    animation-name: spin;
+    animation-duration: 5000ms;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear; 
+}
+
+@keyframes spin {
+    from {
+        transform:rotate(0deg);
+    }
+    to {
+        transform:rotate(360deg);
+    }
+}

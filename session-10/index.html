@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+
+        <script>
+            function myFunction(){
+                document.getElementById("demo").innerHTML = "It has changed the original text!";
+            }
+
+            function turnOn(){
+                document.getElementById('myImage').src = 'img/bulbon.png'
+            }
+
+            function turnOff(){
+                document.getElementById('myImage').src = 'img/bulboff.png'
+            }
+
+        </script>
+    </head>
+    <body>
+
+        <p id="demo">
+            Here is the original text.
+        </p>
+
+        <button onclick="turnOn()">Turn on the light</button>
+
+        <img src="img/bulboff.png" id="myImage" alt="pic of a lightbulb" width="200px">
+
+        <button onclick="turnOff()">Turn off the light</button>
+
+        <form action="game.html">
+            <input type="Submit" value="Start game">
+        </form>
+    </body>
+</html>

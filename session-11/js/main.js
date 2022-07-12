@@ -25,7 +25,7 @@ var calculatorButtonsArray = [
         operator: "=",
         onClick: (currentValue) => {
             //calculate string. todo
-            return currentValue + " wanker wanker wanker wanker";
+            return currentValue + " w w w";
         }
     } 
 ]

@@ -1,0 +1,21 @@
+*,*:before, *:after {
+
+  box-sizing: border-box ; 
+  padding: 0 ;
+  margin: 0 ;  
+  
+  }
+
+.navbar{
+  color: blue;
+  list-style: none;
+}
+
+.dark-mode{
+  background-color: dimgrey;
+}
+
+.articleGrid{
+  display: flex;
+  justify-content: space-between;
+}

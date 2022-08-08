@@ -4,29 +4,11 @@ import Header from "./components/Header";
 import Section from "./components/Section";
 import Footer from "./components/Footer";
 import {useState} from 'react';
+import {articles} from 
 
 function App() {
 
   const [darkMode, setDarkMode] = useState(false);
-
-  const article = [
-    {
-        title : "Vinyl review 1",
-        text: "Great vinyl",
-        image: "1.jpeg"
-    },
-    {
-        title : "Vinyl review 2",
-        text: "Fantastic vinyl",
-        image: '2.jpeg'
-    },
-    {
-        title : "Vinyl review 3",
-        text: "Exquisite vinyl",
-        image: '3.jpeg'
-    }
-
-]
 
   return (
     <div className={`App ${darkMode ? 'dark' : ''}`}>

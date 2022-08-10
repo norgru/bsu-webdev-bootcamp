@@ -43,8 +43,22 @@ function App() {
 
   const submitHandler = (e) => {
     e.preventDefault();
-    console.log('submitted');
+    
     addPerson();
+
+    function validateInputs(){
+      var regex = /^[a-z ,.'-]+$/i;
+
+      if(regex.test(name)){
+        addPerson();
+        console.log('submitted');
+      }
+      else{
+        console.log('false name');
+      }
+    }
+    validateInputs();
+
   }
 
   
@@ -62,6 +76,7 @@ function App() {
               email:
               <input type="text" value={email} onChange={(event) => setEmail(event.target.value)} />
           </label>
+          <input type="checkbox" value="tick" />
           <input type="submit" value="Submit" />
       </form>
 
@@ -70,8 +85,9 @@ function App() {
           return(
             <div>
               {person.personName}
-              <hr></hr>
+              <br></br>
               {person.email}
+              <hr></hr>
             </div>
 
           )

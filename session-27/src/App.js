@@ -55,9 +55,10 @@ function App() {
                       <span>{item}</span>
                   </div>
               ))}
+              
       </form>
 
-      <RadioButtons></RadioButtons>
+      <RadioButtons><RadioButtons/>
 
     </div>
   );

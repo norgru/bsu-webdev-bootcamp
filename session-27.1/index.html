@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+
+        <button id="iButton">Click me</button>
+
+        <script>
+
+        
+        //events are when some user interaction occurs, such as a click, scrool, mouseover, change input
+        //in js we use these events to trigger some behaviour, e.g. call a function etc..
+        //Here is a simple click event using addEventListener
+        
+        //first we get the element we want to apply the event to
+        const btn = document.getElementById('iButton');
+        
+        function displaySmth(){
+
+        }
+        //two args,, callback function that we want ot happen AND 
+        btn.addEventListener('click', function(){
+            console.log('click')
+        })
+        console.log(btn);
+        </script>
+    </body>
+</html>

@@ -55,7 +55,6 @@ function App() {
                       <span>{item}</span>
                   </div>
               ))}
-              
       </form>
 
       <RadioButtons><RadioButtons/>
